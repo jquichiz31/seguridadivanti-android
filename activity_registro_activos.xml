@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".RegistroActivosActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Activos"
+        android:textSize="24sp"
+        android:textColor="#003366"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo para escanear el código de barras -->
+    <EditText
+        android:id="@+id/inputCodigoBarras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese o escanee el código de barras"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:backgroundTint="#003366"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:autofillHints="none" />
+
+    <!-- Información del Equipo -->
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aquí se mostrarán los resultados de la consulta"
+        android:textSize="16sp"
+        android:textColor="#003366"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <!-- Botón Registrar ENTRADA -->
+        <Button
+            android:id="@+id/btnEntrada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registrar ENTRADA"
+            android:backgroundTint="#003366"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Botón Registrar SALIDA -->
+        <Button
+            android:id="@+id/btnSalida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registrar SALIDA"
+            android:backgroundTint="#003366"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Botón Ver Historial -->
+    <Button
+        android:id="@+id/btnVerHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Historial"
+        android:backgroundTint="#003366"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
